@@ -1,13 +1,11 @@
 # Keyboard
 ### For macbook pro 13-inch, change "~" to esacpe, "command+~" to "`" and "option+command+~" to force quit
-  
-  * refer [mapping-a-physical-escape-key-on-a-macbook-pro-with-touch-bar](https://mybyways.com/blog/mapping-a-physical-escape-key-on-a-macbook-pro-with-touch-bar "mapping-escape")
-
-  * Install [Karbiner-elements and Karbiner-event-viewer](https://karabiner-elements.pqrs.org "karbainer-org")
-
-  * modify `~/.config/karabiner/karabiner.json` by adding code to "rules: " inside the "[]"
-
-        rules: [
+***
+- Refer [mapping-a-physical-escape-key-on-a-macbook-pro-with-touch-bar](https://mybyways.com/blog/mapping-a-physical-escape-key-on-a-macbook-pro-with-touch-bar "mapping-escape")
+- Install [Karbiner-elements and Karbiner-event-viewer](https://karabiner-elements.pqrs.org "karbainer-org")
+- Modify `~/.config/karabiner/karabiner.json` by adding code to "rules: " inside the "[]"
+```json
+       rules: [
           {
             "description": "A Grave Escape",
             "manipulators": [
@@ -38,8 +36,6 @@
             ]
           }
         ]
-
-  * might modify the **security and privacy configuration of Mac** to allow karbiner to monitor keyboard 
-
-  * use karbiner_event_viewer to check new configuration works
-
+```
+- Might modify the **security and privacy configuration of Mac** to allow karbiner to monitor keyboard 
+- Use karbiner_event_viewer to check new configuration works
